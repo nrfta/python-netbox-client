@@ -38835,7 +38835,7 @@
           "title": "DNS Name",
           "description": "Hostname or FQDN (not case-sensitive)",
           "type": "string",
-          "pattern": "^[0-9A-Za-z._-]+$",
+          "pattern": "^$|^[0-9A-Za-z._-]+$",
           "maxLength": 255
         },
         "description": {
@@ -38946,7 +38946,7 @@
           "title": "DNS Name",
           "description": "Hostname or FQDN (not case-sensitive)",
           "type": "string",
-          "pattern": "^[0-9A-Za-z._-]+$",
+          "pattern": "^$|^[0-9A-Za-z._-]+$",
           "maxLength": 255
         },
         "description": {
