@@ -30762,7 +30762,7 @@
         "color": {
           "title": "Color",
           "type": "string",
-          "pattern": "^[0-9a-f]{6}$",
+          "pattern": "^$|^[0-9a-f]{6}$",
           "maxLength": 6
         },
         "length": {
@@ -30895,7 +30895,7 @@
         "color": {
           "title": "Color",
           "type": "string",
-          "pattern": "^[0-9a-f]{6}$",
+          "pattern": "^$|^[0-9a-f]{6}$",
           "maxLength": 6
         },
         "length": {
@@ -32196,7 +32196,7 @@
         "color": {
           "title": "Color",
           "type": "string",
-          "pattern": "^[0-9a-f]{6}$",
+          "pattern": "^$|^[0-9a-f]{6}$",
           "maxLength": 6,
           "minLength": 1
         },
@@ -36433,7 +36433,7 @@
         "color": {
           "title": "Color",
           "type": "string",
-          "pattern": "^[0-9a-f]{6}$",
+          "pattern": "^$|^[0-9a-f]{6}$",
           "maxLength": 6,
           "minLength": 1
         },
@@ -38415,7 +38415,7 @@
         "color": {
           "title": "Color",
           "type": "string",
-          "pattern": "^[0-9a-f]{6}$",
+          "pattern": "^$|^[0-9a-f]{6}$",
           "maxLength": 6,
           "minLength": 1
         },
