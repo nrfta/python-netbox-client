@@ -41,5 +41,6 @@ jobs:
           git config user.name "Underline Bot"
           sed -i 's,git init,,g' git_push.sh
           sed -i 's,git pull origin master,,g' git_push.sh
+          echo "swagger-codegen-cli.jar" >> .gitignore
           /bin/sh ./git_push.sh nrfta python-netbox-client "Code generated release"
 
