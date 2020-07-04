@@ -26,7 +26,7 @@ jobs:
         run: |
           set -e
 
-          git clone https://underline-bot:${GIT_TOKEN}@github.com/nrfta/python-netbox-client master
+          git clone https://underline-bot:${GIT_TOKEN}@github.com/nrfta/python-netbox-client $GITHUB_WORKSPACE/master
 
           wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.14/swagger-codegen-cli-2.4.14.jar \
             -O swagger-codegen-cli.jar
