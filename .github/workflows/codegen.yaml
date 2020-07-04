@@ -22,7 +22,7 @@ jobs:
             -O swagger-codegen-cli.jar
           java -jar swagger-codegen-cli.jar generate \
             -l python --git-user-id nrfta --git-repo-id ${{ github.repository }} \
-            -c config.json -i netbox.swagger -o cd $GITHUB_WORKSPACE/master
+            -c config.json -i netbox.swagger -o $GITHUB_WORKSPACE/master
           cd $GITHUB_WORKSPACE/master 
           /bin/sh ./git_push.sh nrfta python-netbox-client "Code generated release"
 
