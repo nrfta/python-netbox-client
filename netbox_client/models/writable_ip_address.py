@@ -376,8 +376,8 @@ class WritableIPAddress(object):
         """
         if dns_name is not None and len(dns_name) > 255:
             raise ValueError("Invalid value for `dns_name`, length must be less than or equal to `255`")  # noqa: E501
-        if dns_name is not None and not re.search(r'^[0-9A-Za-z._-]+$', dns_name):  # noqa: E501
-            raise ValueError(r"Invalid value for `dns_name`, must be a follow pattern or equal to `/^[0-9A-Za-z._-]+$/`")  # noqa: E501
+        if dns_name is not None and not re.search(r'^$|^[0-9A-Za-z._-]+$', dns_name):  # noqa: E501
+            raise ValueError(r"Invalid value for `dns_name`, must be a follow pattern or equal to `/^$|^[0-9A-Za-z._-]+$/`")  # noqa: E501
 
         self._dns_name = dns_name
 
