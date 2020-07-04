@@ -363,8 +363,8 @@ class WritableCable(object):
         """
         if color is not None and len(color) > 6:
             raise ValueError("Invalid value for `color`, length must be less than or equal to `6`")  # noqa: E501
-        if color is not None and not re.search(r'^[0-9a-f]{6}$', color):  # noqa: E501
-            raise ValueError(r"Invalid value for `color`, must be a follow pattern or equal to `/^[0-9a-f]{6}$/`")  # noqa: E501
+        if color is not None and not re.search(r'^$|^[0-9a-f]{6}$', color):  # noqa: E501
+            raise ValueError(r"Invalid value for `color`, must be a follow pattern or equal to `/^$|^[0-9a-f]{6}$/`")  # noqa: E501
 
         self._color = color
 
