@@ -1,4 +1,4 @@
-# netbox_client.DcimApi
+# netbox-client.DcimApi
 
 All URIs are relative to *https://netbox.us-east-2.ops.underline.com/api*
 
@@ -223,19 +223,19 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableCable() # WritableCable | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableCable() # WritableCable | 
 
 try:
     api_response = api_instance.dcim_cables_create(data)
@@ -276,18 +276,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cable.
 
 try:
@@ -328,18 +328,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 label = 'label_example' # str |  (optional)
 length = 'length_example' # str |  (optional)
@@ -461,20 +461,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cable.
-data = netbox_client.WritableCable() # WritableCable | 
+data = netbox-client.WritableCable() # WritableCable | 
 
 try:
     api_response = api_instance.dcim_cables_partial_update(id, data)
@@ -516,18 +516,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cable.
 
 try:
@@ -569,20 +569,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cable.
-data = netbox_client.WritableCable() # WritableCable | 
+data = netbox-client.WritableCable() # WritableCable | 
 
 try:
     api_response = api_instance.dcim_cables_update(id, data)
@@ -624,18 +624,18 @@ This endpoint allows a user to determine what device (if any) is connected to a 
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 peer_device = 'peer_device_example' # str | The name of the peer device
 peer_interface = 'peer_interface_example' # str | The name of the peer interface
 
@@ -679,18 +679,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 name = 'name_example' # str |  (optional)
 connection_status = 'connection_status_example' # str |  (optional)
 site = 'site_example' # str |  (optional)
@@ -764,19 +764,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableConsolePortTemplate() # WritableConsolePortTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableConsolePortTemplate() # WritableConsolePortTemplate | 
 
 try:
     api_response = api_instance.dcim_console_port_templates_create(data)
@@ -817,18 +817,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port template.
 
 try:
@@ -869,18 +869,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -966,20 +966,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port template.
-data = netbox_client.WritableConsolePortTemplate() # WritableConsolePortTemplate | 
+data = netbox-client.WritableConsolePortTemplate() # WritableConsolePortTemplate | 
 
 try:
     api_response = api_instance.dcim_console_port_templates_partial_update(id, data)
@@ -1021,18 +1021,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port template.
 
 try:
@@ -1074,20 +1074,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port template.
-data = netbox_client.WritableConsolePortTemplate() # WritableConsolePortTemplate | 
+data = netbox-client.WritableConsolePortTemplate() # WritableConsolePortTemplate | 
 
 try:
     api_response = api_instance.dcim_console_port_templates_update(id, data)
@@ -1129,19 +1129,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableConsolePort() # WritableConsolePort | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableConsolePort() # WritableConsolePort | 
 
 try:
     api_response = api_instance.dcim_console_ports_create(data)
@@ -1182,18 +1182,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port.
 
 try:
@@ -1234,18 +1234,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 description = 'description_example' # str |  (optional)
@@ -1381,20 +1381,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port.
-data = netbox_client.WritableConsolePort() # WritableConsolePort | 
+data = netbox-client.WritableConsolePort() # WritableConsolePort | 
 
 try:
     api_response = api_instance.dcim_console_ports_partial_update(id, data)
@@ -1436,18 +1436,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port.
 
 try:
@@ -1489,18 +1489,18 @@ Trace a complete cable path and return each segment as a three-tuple of (termina
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port.
 
 try:
@@ -1542,20 +1542,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console port.
-data = netbox_client.WritableConsolePort() # WritableConsolePort | 
+data = netbox-client.WritableConsolePort() # WritableConsolePort | 
 
 try:
     api_response = api_instance.dcim_console_ports_update(id, data)
@@ -1597,19 +1597,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableConsoleServerPortTemplate() # WritableConsoleServerPortTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableConsoleServerPortTemplate() # WritableConsoleServerPortTemplate | 
 
 try:
     api_response = api_instance.dcim_console_server_port_templates_create(data)
@@ -1650,18 +1650,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port template.
 
 try:
@@ -1702,18 +1702,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -1799,20 +1799,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port template.
-data = netbox_client.WritableConsoleServerPortTemplate() # WritableConsoleServerPortTemplate | 
+data = netbox-client.WritableConsoleServerPortTemplate() # WritableConsoleServerPortTemplate | 
 
 try:
     api_response = api_instance.dcim_console_server_port_templates_partial_update(id, data)
@@ -1854,18 +1854,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port template.
 
 try:
@@ -1907,20 +1907,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port template.
-data = netbox_client.WritableConsoleServerPortTemplate() # WritableConsoleServerPortTemplate | 
+data = netbox-client.WritableConsoleServerPortTemplate() # WritableConsoleServerPortTemplate | 
 
 try:
     api_response = api_instance.dcim_console_server_port_templates_update(id, data)
@@ -1962,19 +1962,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableConsoleServerPort() # WritableConsoleServerPort | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableConsoleServerPort() # WritableConsoleServerPort | 
 
 try:
     api_response = api_instance.dcim_console_server_ports_create(data)
@@ -2015,18 +2015,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port.
 
 try:
@@ -2067,18 +2067,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 description = 'description_example' # str |  (optional)
@@ -2214,20 +2214,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port.
-data = netbox_client.WritableConsoleServerPort() # WritableConsoleServerPort | 
+data = netbox-client.WritableConsoleServerPort() # WritableConsoleServerPort | 
 
 try:
     api_response = api_instance.dcim_console_server_ports_partial_update(id, data)
@@ -2269,18 +2269,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port.
 
 try:
@@ -2322,18 +2322,18 @@ Trace a complete cable path and return each segment as a three-tuple of (termina
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port.
 
 try:
@@ -2375,20 +2375,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this console server port.
-data = netbox_client.WritableConsoleServerPort() # WritableConsoleServerPort | 
+data = netbox-client.WritableConsoleServerPort() # WritableConsoleServerPort | 
 
 try:
     api_response = api_instance.dcim_console_server_ports_update(id, data)
@@ -2430,19 +2430,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableDeviceBayTemplate() # WritableDeviceBayTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableDeviceBayTemplate() # WritableDeviceBayTemplate | 
 
 try:
     api_response = api_instance.dcim_device_bay_templates_create(data)
@@ -2483,18 +2483,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay template.
 
 try:
@@ -2535,18 +2535,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 q = 'q_example' # str |  (optional)
@@ -2628,20 +2628,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay template.
-data = netbox_client.WritableDeviceBayTemplate() # WritableDeviceBayTemplate | 
+data = netbox-client.WritableDeviceBayTemplate() # WritableDeviceBayTemplate | 
 
 try:
     api_response = api_instance.dcim_device_bay_templates_partial_update(id, data)
@@ -2683,18 +2683,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay template.
 
 try:
@@ -2736,20 +2736,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay template.
-data = netbox_client.WritableDeviceBayTemplate() # WritableDeviceBayTemplate | 
+data = netbox-client.WritableDeviceBayTemplate() # WritableDeviceBayTemplate | 
 
 try:
     api_response = api_instance.dcim_device_bay_templates_update(id, data)
@@ -2791,19 +2791,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableDeviceBay() # WritableDeviceBay | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableDeviceBay() # WritableDeviceBay | 
 
 try:
     api_response = api_instance.dcim_device_bays_create(data)
@@ -2844,18 +2844,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay.
 
 try:
@@ -2896,18 +2896,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 description = 'description_example' # str |  (optional)
@@ -3033,20 +3033,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay.
-data = netbox_client.WritableDeviceBay() # WritableDeviceBay | 
+data = netbox-client.WritableDeviceBay() # WritableDeviceBay | 
 
 try:
     api_response = api_instance.dcim_device_bays_partial_update(id, data)
@@ -3088,18 +3088,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay.
 
 try:
@@ -3141,20 +3141,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device bay.
-data = netbox_client.WritableDeviceBay() # WritableDeviceBay | 
+data = netbox-client.WritableDeviceBay() # WritableDeviceBay | 
 
 try:
     api_response = api_instance.dcim_device_bays_update(id, data)
@@ -3196,19 +3196,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.DeviceRole() # DeviceRole | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.DeviceRole() # DeviceRole | 
 
 try:
     api_response = api_instance.dcim_device_roles_create(data)
@@ -3249,18 +3249,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device role.
 
 try:
@@ -3301,18 +3301,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -3432,20 +3432,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device role.
-data = netbox_client.DeviceRole() # DeviceRole | 
+data = netbox-client.DeviceRole() # DeviceRole | 
 
 try:
     api_response = api_instance.dcim_device_roles_partial_update(id, data)
@@ -3487,18 +3487,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device role.
 
 try:
@@ -3540,20 +3540,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device role.
-data = netbox_client.DeviceRole() # DeviceRole | 
+data = netbox-client.DeviceRole() # DeviceRole | 
 
 try:
     api_response = api_instance.dcim_device_roles_update(id, data)
@@ -3595,19 +3595,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableDeviceType() # WritableDeviceType | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableDeviceType() # WritableDeviceType | 
 
 try:
     api_response = api_instance.dcim_device_types_create(data)
@@ -3648,18 +3648,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device type.
 
 try:
@@ -3700,18 +3700,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 model = 'model_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -3885,20 +3885,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device type.
-data = netbox_client.WritableDeviceType() # WritableDeviceType | 
+data = netbox-client.WritableDeviceType() # WritableDeviceType | 
 
 try:
     api_response = api_instance.dcim_device_types_partial_update(id, data)
@@ -3940,18 +3940,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device type.
 
 try:
@@ -3993,20 +3993,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device type.
-data = netbox_client.WritableDeviceType() # WritableDeviceType | 
+data = netbox-client.WritableDeviceType() # WritableDeviceType | 
 
 try:
     api_response = api_instance.dcim_device_types_update(id, data)
@@ -4048,19 +4048,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableDeviceWithConfigContext() # WritableDeviceWithConfigContext | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableDeviceWithConfigContext() # WritableDeviceWithConfigContext | 
 
 try:
     api_response = api_instance.dcim_devices_create(data)
@@ -4101,18 +4101,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device.
 
 try:
@@ -4153,18 +4153,18 @@ A convenience method for rendering graphs for a particular Device.
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device.
 
 try:
@@ -4206,18 +4206,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 asset_tag = 'asset_tag_example' # str |  (optional)
@@ -4499,18 +4499,18 @@ Execute a NAPALM method on a Device
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device.
 method = 'method_example' # str | 
 
@@ -4554,20 +4554,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device.
-data = netbox_client.WritableDeviceWithConfigContext() # WritableDeviceWithConfigContext | 
+data = netbox-client.WritableDeviceWithConfigContext() # WritableDeviceWithConfigContext | 
 
 try:
     api_response = api_instance.dcim_devices_partial_update(id, data)
@@ -4609,18 +4609,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device.
 
 try:
@@ -4662,20 +4662,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this device.
-data = netbox_client.WritableDeviceWithConfigContext() # WritableDeviceWithConfigContext | 
+data = netbox-client.WritableDeviceWithConfigContext() # WritableDeviceWithConfigContext | 
 
 try:
     api_response = api_instance.dcim_devices_update(id, data)
@@ -4717,19 +4717,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableFrontPortTemplate() # WritableFrontPortTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableFrontPortTemplate() # WritableFrontPortTemplate | 
 
 try:
     api_response = api_instance.dcim_front_port_templates_create(data)
@@ -4770,18 +4770,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port template.
 
 try:
@@ -4822,18 +4822,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -4919,20 +4919,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port template.
-data = netbox_client.WritableFrontPortTemplate() # WritableFrontPortTemplate | 
+data = netbox-client.WritableFrontPortTemplate() # WritableFrontPortTemplate | 
 
 try:
     api_response = api_instance.dcim_front_port_templates_partial_update(id, data)
@@ -4974,18 +4974,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port template.
 
 try:
@@ -5027,20 +5027,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port template.
-data = netbox_client.WritableFrontPortTemplate() # WritableFrontPortTemplate | 
+data = netbox-client.WritableFrontPortTemplate() # WritableFrontPortTemplate | 
 
 try:
     api_response = api_instance.dcim_front_port_templates_update(id, data)
@@ -5082,19 +5082,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableFrontPort() # WritableFrontPort | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableFrontPort() # WritableFrontPort | 
 
 try:
     api_response = api_instance.dcim_front_ports_create(data)
@@ -5135,18 +5135,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port.
 
 try:
@@ -5187,18 +5187,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -5330,20 +5330,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port.
-data = netbox_client.WritableFrontPort() # WritableFrontPort | 
+data = netbox-client.WritableFrontPort() # WritableFrontPort | 
 
 try:
     api_response = api_instance.dcim_front_ports_partial_update(id, data)
@@ -5385,18 +5385,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port.
 
 try:
@@ -5438,20 +5438,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this front port.
-data = netbox_client.WritableFrontPort() # WritableFrontPort | 
+data = netbox-client.WritableFrontPort() # WritableFrontPort | 
 
 try:
     api_response = api_instance.dcim_front_ports_update(id, data)
@@ -5493,18 +5493,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 connection_status = 'connection_status_example' # str |  (optional)
 site = 'site_example' # str |  (optional)
 device_id = 'device_id_example' # str |  (optional)
@@ -5558,19 +5558,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableInterfaceTemplate() # WritableInterfaceTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableInterfaceTemplate() # WritableInterfaceTemplate | 
 
 try:
     api_response = api_instance.dcim_interface_templates_create(data)
@@ -5611,18 +5611,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface template.
 
 try:
@@ -5663,18 +5663,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -5762,20 +5762,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface template.
-data = netbox_client.WritableInterfaceTemplate() # WritableInterfaceTemplate | 
+data = netbox-client.WritableInterfaceTemplate() # WritableInterfaceTemplate | 
 
 try:
     api_response = api_instance.dcim_interface_templates_partial_update(id, data)
@@ -5817,18 +5817,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface template.
 
 try:
@@ -5870,20 +5870,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface template.
-data = netbox_client.WritableInterfaceTemplate() # WritableInterfaceTemplate | 
+data = netbox-client.WritableInterfaceTemplate() # WritableInterfaceTemplate | 
 
 try:
     api_response = api_instance.dcim_interface_templates_update(id, data)
@@ -5925,19 +5925,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableDeviceInterface() # WritableDeviceInterface | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableDeviceInterface() # WritableDeviceInterface | 
 
 try:
     api_response = api_instance.dcim_interfaces_create(data)
@@ -5978,18 +5978,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
 
 try:
@@ -6030,18 +6030,18 @@ A convenience method for rendering graphs for a particular interface.
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
 
 try:
@@ -6083,18 +6083,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 connection_status = 'connection_status_example' # str |  (optional)
@@ -6276,20 +6276,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
-data = netbox_client.WritableDeviceInterface() # WritableDeviceInterface | 
+data = netbox-client.WritableDeviceInterface() # WritableDeviceInterface | 
 
 try:
     api_response = api_instance.dcim_interfaces_partial_update(id, data)
@@ -6331,18 +6331,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
 
 try:
@@ -6384,18 +6384,18 @@ Trace a complete cable path and return each segment as a three-tuple of (termina
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
 
 try:
@@ -6437,20 +6437,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
-data = netbox_client.WritableDeviceInterface() # WritableDeviceInterface | 
+data = netbox-client.WritableDeviceInterface() # WritableDeviceInterface | 
 
 try:
     api_response = api_instance.dcim_interfaces_update(id, data)
@@ -6492,19 +6492,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableInventoryItem() # WritableInventoryItem | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableInventoryItem() # WritableInventoryItem | 
 
 try:
     api_response = api_instance.dcim_inventory_items_create(data)
@@ -6545,18 +6545,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this inventory item.
 
 try:
@@ -6597,18 +6597,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 part_id = 'part_id_example' # str |  (optional)
@@ -6770,20 +6770,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this inventory item.
-data = netbox_client.WritableInventoryItem() # WritableInventoryItem | 
+data = netbox-client.WritableInventoryItem() # WritableInventoryItem | 
 
 try:
     api_response = api_instance.dcim_inventory_items_partial_update(id, data)
@@ -6825,18 +6825,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this inventory item.
 
 try:
@@ -6878,20 +6878,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this inventory item.
-data = netbox_client.WritableInventoryItem() # WritableInventoryItem | 
+data = netbox-client.WritableInventoryItem() # WritableInventoryItem | 
 
 try:
     api_response = api_instance.dcim_inventory_items_update(id, data)
@@ -6933,19 +6933,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.Manufacturer() # Manufacturer | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.Manufacturer() # Manufacturer | 
 
 try:
     api_response = api_instance.dcim_manufacturers_create(data)
@@ -6986,18 +6986,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this manufacturer.
 
 try:
@@ -7038,18 +7038,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -7167,20 +7167,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this manufacturer.
-data = netbox_client.Manufacturer() # Manufacturer | 
+data = netbox-client.Manufacturer() # Manufacturer | 
 
 try:
     api_response = api_instance.dcim_manufacturers_partial_update(id, data)
@@ -7222,18 +7222,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this manufacturer.
 
 try:
@@ -7275,20 +7275,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this manufacturer.
-data = netbox_client.Manufacturer() # Manufacturer | 
+data = netbox-client.Manufacturer() # Manufacturer | 
 
 try:
     api_response = api_instance.dcim_manufacturers_update(id, data)
@@ -7330,19 +7330,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritablePlatform() # WritablePlatform | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritablePlatform() # WritablePlatform | 
 
 try:
     api_response = api_instance.dcim_platforms_create(data)
@@ -7383,18 +7383,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this platform.
 
 try:
@@ -7435,18 +7435,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -7592,20 +7592,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this platform.
-data = netbox_client.WritablePlatform() # WritablePlatform | 
+data = netbox-client.WritablePlatform() # WritablePlatform | 
 
 try:
     api_response = api_instance.dcim_platforms_partial_update(id, data)
@@ -7647,18 +7647,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this platform.
 
 try:
@@ -7700,20 +7700,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this platform.
-data = netbox_client.WritablePlatform() # WritablePlatform | 
+data = netbox-client.WritablePlatform() # WritablePlatform | 
 
 try:
     api_response = api_instance.dcim_platforms_update(id, data)
@@ -7755,18 +7755,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 name = 'name_example' # str |  (optional)
 connection_status = 'connection_status_example' # str |  (optional)
 site = 'site_example' # str |  (optional)
@@ -7840,19 +7840,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritablePowerFeed() # WritablePowerFeed | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritablePowerFeed() # WritablePowerFeed | 
 
 try:
     api_response = api_instance.dcim_power_feeds_create(data)
@@ -7893,18 +7893,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power feed.
 
 try:
@@ -7945,18 +7945,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 status = 'status_example' # str |  (optional)
@@ -8126,20 +8126,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power feed.
-data = netbox_client.WritablePowerFeed() # WritablePowerFeed | 
+data = netbox-client.WritablePowerFeed() # WritablePowerFeed | 
 
 try:
     api_response = api_instance.dcim_power_feeds_partial_update(id, data)
@@ -8181,18 +8181,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power feed.
 
 try:
@@ -8234,20 +8234,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power feed.
-data = netbox_client.WritablePowerFeed() # WritablePowerFeed | 
+data = netbox-client.WritablePowerFeed() # WritablePowerFeed | 
 
 try:
     api_response = api_instance.dcim_power_feeds_update(id, data)
@@ -8289,19 +8289,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritablePowerOutletTemplate() # WritablePowerOutletTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritablePowerOutletTemplate() # WritablePowerOutletTemplate | 
 
 try:
     api_response = api_instance.dcim_power_outlet_templates_create(data)
@@ -8342,18 +8342,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet template.
 
 try:
@@ -8394,18 +8394,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -8495,20 +8495,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet template.
-data = netbox_client.WritablePowerOutletTemplate() # WritablePowerOutletTemplate | 
+data = netbox-client.WritablePowerOutletTemplate() # WritablePowerOutletTemplate | 
 
 try:
     api_response = api_instance.dcim_power_outlet_templates_partial_update(id, data)
@@ -8550,18 +8550,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet template.
 
 try:
@@ -8603,20 +8603,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet template.
-data = netbox_client.WritablePowerOutletTemplate() # WritablePowerOutletTemplate | 
+data = netbox-client.WritablePowerOutletTemplate() # WritablePowerOutletTemplate | 
 
 try:
     api_response = api_instance.dcim_power_outlet_templates_update(id, data)
@@ -8658,19 +8658,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritablePowerOutlet() # WritablePowerOutlet | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritablePowerOutlet() # WritablePowerOutlet | 
 
 try:
     api_response = api_instance.dcim_power_outlets_create(data)
@@ -8711,18 +8711,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet.
 
 try:
@@ -8763,18 +8763,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 feed_leg = 'feed_leg_example' # str |  (optional)
@@ -8914,20 +8914,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet.
-data = netbox_client.WritablePowerOutlet() # WritablePowerOutlet | 
+data = netbox-client.WritablePowerOutlet() # WritablePowerOutlet | 
 
 try:
     api_response = api_instance.dcim_power_outlets_partial_update(id, data)
@@ -8969,18 +8969,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet.
 
 try:
@@ -9022,18 +9022,18 @@ Trace a complete cable path and return each segment as a three-tuple of (termina
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet.
 
 try:
@@ -9075,20 +9075,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power outlet.
-data = netbox_client.WritablePowerOutlet() # WritablePowerOutlet | 
+data = netbox-client.WritablePowerOutlet() # WritablePowerOutlet | 
 
 try:
     api_response = api_instance.dcim_power_outlets_update(id, data)
@@ -9130,19 +9130,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritablePowerPanel() # WritablePowerPanel | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritablePowerPanel() # WritablePowerPanel | 
 
 try:
     api_response = api_instance.dcim_power_panels_create(data)
@@ -9183,18 +9183,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power panel.
 
 try:
@@ -9235,18 +9235,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 q = 'q_example' # str |  (optional)
@@ -9344,20 +9344,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power panel.
-data = netbox_client.WritablePowerPanel() # WritablePowerPanel | 
+data = netbox-client.WritablePowerPanel() # WritablePowerPanel | 
 
 try:
     api_response = api_instance.dcim_power_panels_partial_update(id, data)
@@ -9399,18 +9399,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power panel.
 
 try:
@@ -9452,20 +9452,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power panel.
-data = netbox_client.WritablePowerPanel() # WritablePowerPanel | 
+data = netbox-client.WritablePowerPanel() # WritablePowerPanel | 
 
 try:
     api_response = api_instance.dcim_power_panels_update(id, data)
@@ -9507,19 +9507,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritablePowerPortTemplate() # WritablePowerPortTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritablePowerPortTemplate() # WritablePowerPortTemplate | 
 
 try:
     api_response = api_instance.dcim_power_port_templates_create(data)
@@ -9560,18 +9560,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port template.
 
 try:
@@ -9612,18 +9612,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -9733,20 +9733,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port template.
-data = netbox_client.WritablePowerPortTemplate() # WritablePowerPortTemplate | 
+data = netbox-client.WritablePowerPortTemplate() # WritablePowerPortTemplate | 
 
 try:
     api_response = api_instance.dcim_power_port_templates_partial_update(id, data)
@@ -9788,18 +9788,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port template.
 
 try:
@@ -9841,20 +9841,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port template.
-data = netbox_client.WritablePowerPortTemplate() # WritablePowerPortTemplate | 
+data = netbox-client.WritablePowerPortTemplate() # WritablePowerPortTemplate | 
 
 try:
     api_response = api_instance.dcim_power_port_templates_update(id, data)
@@ -9896,19 +9896,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritablePowerPort() # WritablePowerPort | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritablePowerPort() # WritablePowerPort | 
 
 try:
     api_response = api_instance.dcim_power_ports_create(data)
@@ -9949,18 +9949,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port.
 
 try:
@@ -10001,18 +10001,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 maximum_draw = 'maximum_draw_example' # str |  (optional)
@@ -10172,20 +10172,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port.
-data = netbox_client.WritablePowerPort() # WritablePowerPort | 
+data = netbox-client.WritablePowerPort() # WritablePowerPort | 
 
 try:
     api_response = api_instance.dcim_power_ports_partial_update(id, data)
@@ -10227,18 +10227,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port.
 
 try:
@@ -10280,18 +10280,18 @@ Trace a complete cable path and return each segment as a three-tuple of (termina
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port.
 
 try:
@@ -10333,20 +10333,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this power port.
-data = netbox_client.WritablePowerPort() # WritablePowerPort | 
+data = netbox-client.WritablePowerPort() # WritablePowerPort | 
 
 try:
     api_response = api_instance.dcim_power_ports_update(id, data)
@@ -10388,19 +10388,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableRackGroup() # WritableRackGroup | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableRackGroup() # WritableRackGroup | 
 
 try:
     api_response = api_instance.dcim_rack_groups_create(data)
@@ -10441,18 +10441,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack group.
 
 try:
@@ -10493,18 +10493,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -10646,20 +10646,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack group.
-data = netbox_client.WritableRackGroup() # WritableRackGroup | 
+data = netbox-client.WritableRackGroup() # WritableRackGroup | 
 
 try:
     api_response = api_instance.dcim_rack_groups_partial_update(id, data)
@@ -10701,18 +10701,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack group.
 
 try:
@@ -10754,20 +10754,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack group.
-data = netbox_client.WritableRackGroup() # WritableRackGroup | 
+data = netbox-client.WritableRackGroup() # WritableRackGroup | 
 
 try:
     api_response = api_instance.dcim_rack_groups_update(id, data)
@@ -10809,19 +10809,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableRackReservation() # WritableRackReservation | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableRackReservation() # WritableRackReservation | 
 
 try:
     api_response = api_instance.dcim_rack_reservations_create(data)
@@ -10862,18 +10862,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack reservation.
 
 try:
@@ -10914,18 +10914,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 created = 'created_example' # str |  (optional)
 tenant_group_id = 'tenant_group_id_example' # str |  (optional)
@@ -11039,20 +11039,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack reservation.
-data = netbox_client.WritableRackReservation() # WritableRackReservation | 
+data = netbox-client.WritableRackReservation() # WritableRackReservation | 
 
 try:
     api_response = api_instance.dcim_rack_reservations_partial_update(id, data)
@@ -11094,18 +11094,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack reservation.
 
 try:
@@ -11147,20 +11147,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack reservation.
-data = netbox_client.WritableRackReservation() # WritableRackReservation | 
+data = netbox-client.WritableRackReservation() # WritableRackReservation | 
 
 try:
     api_response = api_instance.dcim_rack_reservations_update(id, data)
@@ -11202,19 +11202,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.RackRole() # RackRole | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.RackRole() # RackRole | 
 
 try:
     api_response = api_instance.dcim_rack_roles_create(data)
@@ -11255,18 +11255,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack role.
 
 try:
@@ -11307,18 +11307,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -11436,20 +11436,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack role.
-data = netbox_client.RackRole() # RackRole | 
+data = netbox-client.RackRole() # RackRole | 
 
 try:
     api_response = api_instance.dcim_rack_roles_partial_update(id, data)
@@ -11491,18 +11491,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack role.
 
 try:
@@ -11544,20 +11544,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack role.
-data = netbox_client.RackRole() # RackRole | 
+data = netbox-client.RackRole() # RackRole | 
 
 try:
     api_response = api_instance.dcim_rack_roles_update(id, data)
@@ -11599,19 +11599,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableRack() # WritableRack | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableRack() # WritableRack | 
 
 try:
     api_response = api_instance.dcim_racks_create(data)
@@ -11652,18 +11652,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack.
 
 try:
@@ -11704,18 +11704,18 @@ Rack elevation representing the list of rack units. Also supports rendering the 
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack.
 q = 'q_example' # str |  (optional)
 face = 'front' # str |  (optional) (default to front)
@@ -11775,18 +11775,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 facility_id = 'facility_id_example' # str |  (optional)
@@ -12024,20 +12024,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack.
-data = netbox_client.WritableRack() # WritableRack | 
+data = netbox-client.WritableRack() # WritableRack | 
 
 try:
     api_response = api_instance.dcim_racks_partial_update(id, data)
@@ -12079,18 +12079,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack.
 
 try:
@@ -12132,20 +12132,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rack.
-data = netbox_client.WritableRack() # WritableRack | 
+data = netbox-client.WritableRack() # WritableRack | 
 
 try:
     api_response = api_instance.dcim_racks_update(id, data)
@@ -12187,19 +12187,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableRearPortTemplate() # WritableRearPortTemplate | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableRearPortTemplate() # WritableRearPortTemplate | 
 
 try:
     api_response = api_instance.dcim_rear_port_templates_create(data)
@@ -12240,18 +12240,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port template.
 
 try:
@@ -12292,18 +12292,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -12401,20 +12401,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port template.
-data = netbox_client.WritableRearPortTemplate() # WritableRearPortTemplate | 
+data = netbox-client.WritableRearPortTemplate() # WritableRearPortTemplate | 
 
 try:
     api_response = api_instance.dcim_rear_port_templates_partial_update(id, data)
@@ -12456,18 +12456,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port template.
 
 try:
@@ -12509,20 +12509,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port template.
-data = netbox_client.WritableRearPortTemplate() # WritableRearPortTemplate | 
+data = netbox-client.WritableRearPortTemplate() # WritableRearPortTemplate | 
 
 try:
     api_response = api_instance.dcim_rear_port_templates_update(id, data)
@@ -12564,19 +12564,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableRearPort() # WritableRearPort | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableRearPort() # WritableRearPort | 
 
 try:
     api_response = api_instance.dcim_rear_ports_create(data)
@@ -12617,18 +12617,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port.
 
 try:
@@ -12669,18 +12669,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 type = 'type_example' # str |  (optional)
@@ -12824,20 +12824,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port.
-data = netbox_client.WritableRearPort() # WritableRearPort | 
+data = netbox-client.WritableRearPort() # WritableRearPort | 
 
 try:
     api_response = api_instance.dcim_rear_ports_partial_update(id, data)
@@ -12879,18 +12879,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port.
 
 try:
@@ -12932,20 +12932,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this rear port.
-data = netbox_client.WritableRearPort() # WritableRearPort | 
+data = netbox-client.WritableRearPort() # WritableRearPort | 
 
 try:
     api_response = api_instance.dcim_rear_ports_update(id, data)
@@ -12987,19 +12987,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableRegion() # WritableRegion | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableRegion() # WritableRegion | 
 
 try:
     api_response = api_instance.dcim_regions_create(data)
@@ -13040,18 +13040,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this region.
 
 try:
@@ -13092,18 +13092,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -13229,20 +13229,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this region.
-data = netbox_client.WritableRegion() # WritableRegion | 
+data = netbox-client.WritableRegion() # WritableRegion | 
 
 try:
     api_response = api_instance.dcim_regions_partial_update(id, data)
@@ -13284,18 +13284,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this region.
 
 try:
@@ -13337,20 +13337,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this region.
-data = netbox_client.WritableRegion() # WritableRegion | 
+data = netbox-client.WritableRegion() # WritableRegion | 
 
 try:
     api_response = api_instance.dcim_regions_update(id, data)
@@ -13392,19 +13392,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableSite() # WritableSite | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableSite() # WritableSite | 
 
 try:
     api_response = api_instance.dcim_sites_create(data)
@@ -13445,18 +13445,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this site.
 
 try:
@@ -13497,18 +13497,18 @@ A convenience method for rendering graphs for a particular site.
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this site.
 
 try:
@@ -13550,18 +13550,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -13819,20 +13819,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this site.
-data = netbox_client.WritableSite() # WritableSite | 
+data = netbox-client.WritableSite() # WritableSite | 
 
 try:
     api_response = api_instance.dcim_sites_partial_update(id, data)
@@ -13874,18 +13874,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this site.
 
 try:
@@ -13927,20 +13927,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this site.
-data = netbox_client.WritableSite() # WritableSite | 
+data = netbox-client.WritableSite() # WritableSite | 
 
 try:
     api_response = api_instance.dcim_sites_update(id, data)
@@ -13982,19 +13982,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableVirtualChassis() # WritableVirtualChassis | 
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableVirtualChassis() # WritableVirtualChassis | 
 
 try:
     api_response = api_instance.dcim_virtual_chassis_create(data)
@@ -14035,18 +14035,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual chassis.
 
 try:
@@ -14087,18 +14087,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 domain = 'domain_example' # str |  (optional)
 q = 'q_example' # str |  (optional)
@@ -14204,20 +14204,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual chassis.
-data = netbox_client.WritableVirtualChassis() # WritableVirtualChassis | 
+data = netbox-client.WritableVirtualChassis() # WritableVirtualChassis | 
 
 try:
     api_response = api_instance.dcim_virtual_chassis_partial_update(id, data)
@@ -14259,18 +14259,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual chassis.
 
 try:
@@ -14312,20 +14312,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.DcimApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.DcimApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual chassis.
-data = netbox_client.WritableVirtualChassis() # WritableVirtualChassis | 
+data = netbox-client.WritableVirtualChassis() # WritableVirtualChassis | 
 
 try:
     api_response = api_instance.dcim_virtual_chassis_update(id, data)

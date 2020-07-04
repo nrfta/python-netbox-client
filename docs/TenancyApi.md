@@ -1,4 +1,4 @@
-# netbox_client.TenancyApi
+# netbox-client.TenancyApi
 
 All URIs are relative to *https://netbox.us-east-2.ops.underline.com/api*
 
@@ -29,19 +29,19 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableTenantGroup() # WritableTenantGroup | 
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableTenantGroup() # WritableTenantGroup | 
 
 try:
     api_response = api_instance.tenancy_tenant_groups_create(data)
@@ -82,18 +82,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant group.
 
 try:
@@ -134,18 +134,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -271,20 +271,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant group.
-data = netbox_client.WritableTenantGroup() # WritableTenantGroup | 
+data = netbox-client.WritableTenantGroup() # WritableTenantGroup | 
 
 try:
     api_response = api_instance.tenancy_tenant_groups_partial_update(id, data)
@@ -326,18 +326,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant group.
 
 try:
@@ -379,20 +379,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant group.
-data = netbox_client.WritableTenantGroup() # WritableTenantGroup | 
+data = netbox-client.WritableTenantGroup() # WritableTenantGroup | 
 
 try:
     api_response = api_instance.tenancy_tenant_groups_update(id, data)
@@ -434,19 +434,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
-data = netbox_client.WritableTenant() # WritableTenant | 
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
+data = netbox-client.WritableTenant() # WritableTenant | 
 
 try:
     api_response = api_instance.tenancy_tenants_create(data)
@@ -487,18 +487,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant.
 
 try:
@@ -539,18 +539,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -672,20 +672,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant.
-data = netbox_client.WritableTenant() # WritableTenant | 
+data = netbox-client.WritableTenant() # WritableTenant | 
 
 try:
     api_response = api_instance.tenancy_tenants_partial_update(id, data)
@@ -727,18 +727,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant.
 
 try:
@@ -780,20 +780,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox_client
-from netbox_client.rest import ApiException
+import netbox-client
+from netbox-client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox_client.Configuration()
+configuration = netbox-client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox_client.TenancyApi(netbox_client.ApiClient(configuration))
+api_instance = netbox-client.TenancyApi(netbox-client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this tenant.
-data = netbox_client.WritableTenant() # WritableTenant | 
+data = netbox-client.WritableTenant() # WritableTenant | 
 
 try:
     api_response = api_instance.tenancy_tenants_update(id, data)
