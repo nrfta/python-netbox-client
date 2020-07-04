@@ -25,6 +25,9 @@ jobs:
           GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
+
+          git clone https://github.com/nrfta/${{ github.repository }} master
+
           wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.14/swagger-codegen-cli-2.4.14.jar \
             -O swagger-codegen-cli.jar
           java -jar swagger-codegen-cli.jar generate \
@@ -32,11 +35,11 @@ jobs:
             -c $GITHUB_WORKSPACE/codegen/config.json \
             -i $GITHUB_WORKSPACE/codegen/netbox.swagger \
             -o $GITHUB_WORKSPACE/master
+
           cd $GITHUB_WORKSPACE/master 
-          git init
           git config user.email "67791576+underline-bot@users.noreply.github.com"
           git config user.name "Underline Bot"
           sed -i 's,git init,,g' git_push.sh
-          git config pull.ff only 
+          sed -i 's,git pull origin master,,g' git_push.sh
           /bin/sh ./git_push.sh nrfta python-netbox-client "Code generated release"
 
