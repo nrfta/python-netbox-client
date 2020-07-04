@@ -26,12 +26,12 @@ jobs:
         run: |
           set -e
 
-          git clone https://github.com/nrfta/${{ github.repository }} master
+          git clone https://github.com/nrfta/python-netbox-client master
 
           wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.14/swagger-codegen-cli-2.4.14.jar \
             -O swagger-codegen-cli.jar
           java -jar swagger-codegen-cli.jar generate \
-            -l python --git-user-id nrfta --git-repo-id ${{ github.repository }} \
+            -l python --git-user-id nrfta --git-repo-id python-netbox-client \
             -c $GITHUB_WORKSPACE/codegen/config.json \
             -i $GITHUB_WORKSPACE/codegen/netbox.swagger \
             -o $GITHUB_WORKSPACE/master
