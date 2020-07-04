@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **url** | **str** |  | [optional] 
 **site** | [**NestedSite**](NestedSite.md) |  | 
-**connected_endpoint** | [**NestedInterface**](NestedInterface.md) |  | 
+**connected_endpoint** | [**NestedInterface**](NestedInterface.md) |  | [optional] 
 **port_speed** | **int** |  | 
 **upstream_speed** | **int** | Upstream speed, if different from port speed | [optional] 
 **xconnect_id** | **str** |  | [optional] 

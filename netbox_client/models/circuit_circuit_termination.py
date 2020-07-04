@@ -67,7 +67,8 @@ class CircuitCircuitTermination(object):
         if url is not None:
             self.url = url
         self.site = site
-        self.connected_endpoint = connected_endpoint
+        if connected_endpoint is not None:
+            self.connected_endpoint = connected_endpoint
         self.port_speed = port_speed
         if upstream_speed is not None:
             self.upstream_speed = upstream_speed
@@ -157,8 +158,6 @@ class CircuitCircuitTermination(object):
         :param connected_endpoint: The connected_endpoint of this CircuitCircuitTermination.  # noqa: E501
         :type: NestedInterface
         """
-        if connected_endpoint is None:
-            raise ValueError("Invalid value for `connected_endpoint`, must not be `None`")  # noqa: E501
 
         self._connected_endpoint = connected_endpoint
 
