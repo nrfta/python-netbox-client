@@ -40,7 +40,7 @@ class Configuration(object):
             return
 
         # Default Base url
-        self.host = "https://netbox.us-east-2.ops.underline.com/api"
+        self.host = "https://netbox/api"
         # Temp file folder for downloading files
         self.temp_folder_path = None
 

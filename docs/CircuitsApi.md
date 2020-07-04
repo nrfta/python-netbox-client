@@ -1,6 +1,6 @@
 # netbox_client.CircuitsApi
 
-All URIs are relative to *https://netbox.us-east-2.ops.underline.com/api*
+All URIs are relative to *https://netbox/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
