@@ -1,4 +1,4 @@
-# netbox-client.VirtualizationApi
+# netbox_client.VirtualizationApi
 
 All URIs are relative to *https://netbox.us-east-2.ops.underline.com/api*
 
@@ -47,19 +47,19 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
-data = netbox-client.ClusterGroup() # ClusterGroup | 
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
+data = netbox_client.ClusterGroup() # ClusterGroup | 
 
 try:
     api_response = api_instance.virtualization_cluster_groups_create(data)
@@ -100,18 +100,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster group.
 
 try:
@@ -152,18 +152,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -281,20 +281,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster group.
-data = netbox-client.ClusterGroup() # ClusterGroup | 
+data = netbox_client.ClusterGroup() # ClusterGroup | 
 
 try:
     api_response = api_instance.virtualization_cluster_groups_partial_update(id, data)
@@ -336,18 +336,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster group.
 
 try:
@@ -389,20 +389,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster group.
-data = netbox-client.ClusterGroup() # ClusterGroup | 
+data = netbox_client.ClusterGroup() # ClusterGroup | 
 
 try:
     api_response = api_instance.virtualization_cluster_groups_update(id, data)
@@ -444,19 +444,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
-data = netbox-client.ClusterType() # ClusterType | 
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
+data = netbox_client.ClusterType() # ClusterType | 
 
 try:
     api_response = api_instance.virtualization_cluster_types_create(data)
@@ -497,18 +497,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster type.
 
 try:
@@ -549,18 +549,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -678,20 +678,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster type.
-data = netbox-client.ClusterType() # ClusterType | 
+data = netbox_client.ClusterType() # ClusterType | 
 
 try:
     api_response = api_instance.virtualization_cluster_types_partial_update(id, data)
@@ -733,18 +733,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster type.
 
 try:
@@ -786,20 +786,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster type.
-data = netbox-client.ClusterType() # ClusterType | 
+data = netbox_client.ClusterType() # ClusterType | 
 
 try:
     api_response = api_instance.virtualization_cluster_types_update(id, data)
@@ -841,19 +841,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
-data = netbox-client.WritableCluster() # WritableCluster | 
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
+data = netbox_client.WritableCluster() # WritableCluster | 
 
 try:
     api_response = api_instance.virtualization_clusters_create(data)
@@ -894,18 +894,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster.
 
 try:
@@ -946,18 +946,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 tenant_group_id = 'tenant_group_id_example' # str |  (optional)
@@ -1099,20 +1099,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster.
-data = netbox-client.WritableCluster() # WritableCluster | 
+data = netbox_client.WritableCluster() # WritableCluster | 
 
 try:
     api_response = api_instance.virtualization_clusters_partial_update(id, data)
@@ -1154,18 +1154,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster.
 
 try:
@@ -1207,20 +1207,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this cluster.
-data = netbox-client.WritableCluster() # WritableCluster | 
+data = netbox_client.WritableCluster() # WritableCluster | 
 
 try:
     api_response = api_instance.virtualization_clusters_update(id, data)
@@ -1262,19 +1262,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
-data = netbox-client.WritableVirtualMachineInterface() # WritableVirtualMachineInterface | 
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
+data = netbox_client.WritableVirtualMachineInterface() # WritableVirtualMachineInterface | 
 
 try:
     api_response = api_instance.virtualization_interfaces_create(data)
@@ -1315,18 +1315,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
 
 try:
@@ -1367,18 +1367,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 enabled = 'enabled_example' # str |  (optional)
@@ -1498,20 +1498,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
-data = netbox-client.WritableVirtualMachineInterface() # WritableVirtualMachineInterface | 
+data = netbox_client.WritableVirtualMachineInterface() # WritableVirtualMachineInterface | 
 
 try:
     api_response = api_instance.virtualization_interfaces_partial_update(id, data)
@@ -1553,18 +1553,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
 
 try:
@@ -1606,20 +1606,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this interface.
-data = netbox-client.WritableVirtualMachineInterface() # WritableVirtualMachineInterface | 
+data = netbox_client.WritableVirtualMachineInterface() # WritableVirtualMachineInterface | 
 
 try:
     api_response = api_instance.virtualization_interfaces_update(id, data)
@@ -1661,19 +1661,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
-data = netbox-client.WritableVirtualMachineWithConfigContext() # WritableVirtualMachineWithConfigContext | 
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
+data = netbox_client.WritableVirtualMachineWithConfigContext() # WritableVirtualMachineWithConfigContext | 
 
 try:
     api_response = api_instance.virtualization_virtual_machines_create(data)
@@ -1714,18 +1714,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual machine.
 
 try:
@@ -1766,18 +1766,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 cluster = 'cluster_example' # str |  (optional)
@@ -2005,20 +2005,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual machine.
-data = netbox-client.WritableVirtualMachineWithConfigContext() # WritableVirtualMachineWithConfigContext | 
+data = netbox_client.WritableVirtualMachineWithConfigContext() # WritableVirtualMachineWithConfigContext | 
 
 try:
     api_response = api_instance.virtualization_virtual_machines_partial_update(id, data)
@@ -2060,18 +2060,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual machine.
 
 try:
@@ -2113,20 +2113,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.VirtualizationApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.VirtualizationApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this virtual machine.
-data = netbox-client.WritableVirtualMachineWithConfigContext() # WritableVirtualMachineWithConfigContext | 
+data = netbox_client.WritableVirtualMachineWithConfigContext() # WritableVirtualMachineWithConfigContext | 
 
 try:
     api_response = api_instance.virtualization_virtual_machines_update(id, data)

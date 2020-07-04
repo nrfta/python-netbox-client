@@ -23,7 +23,7 @@ pip install git+https://github.com/nrfta/python-netbox-client.git
 
 Then import the package:
 ```python
-import netbox-client 
+import netbox_client 
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import netbox-client
+import netbox_client
 ```
 
 ## Getting Started
@@ -47,19 +47,19 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
-data = netbox-client.WritableCircuitTermination() # WritableCircuitTermination | 
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
+data = netbox_client.WritableCircuitTermination() # WritableCircuitTermination | 
 
 try:
     api_response = api_instance.circuits_circuit_terminations_create(data)

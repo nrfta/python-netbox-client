@@ -1,4 +1,4 @@
-# netbox-client.SecretsApi
+# netbox_client.SecretsApi
 
 All URIs are relative to *https://netbox.us-east-2.ops.underline.com/api*
 
@@ -31,18 +31,18 @@ This endpoint can be used to generate a new RSA key pair. The keys are returned 
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 
 try:
     # This endpoint can be used to generate a new RSA key pair. The keys are returned in PEM format.
@@ -80,18 +80,18 @@ Retrieve a temporary session key to use for encrypting and decrypting secrets vi
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 
 try:
     api_instance.secrets_get_session_key_create()
@@ -128,19 +128,19 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
-data = netbox-client.SecretRole() # SecretRole | 
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
+data = netbox_client.SecretRole() # SecretRole | 
 
 try:
     api_response = api_instance.secrets_secret_roles_create(data)
@@ -181,18 +181,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret role.
 
 try:
@@ -233,18 +233,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -342,20 +342,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret role.
-data = netbox-client.SecretRole() # SecretRole | 
+data = netbox_client.SecretRole() # SecretRole | 
 
 try:
     api_response = api_instance.secrets_secret_roles_partial_update(id, data)
@@ -397,18 +397,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret role.
 
 try:
@@ -450,20 +450,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret role.
-data = netbox-client.SecretRole() # SecretRole | 
+data = netbox_client.SecretRole() # SecretRole | 
 
 try:
     api_response = api_instance.secrets_secret_roles_update(id, data)
@@ -505,19 +505,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
-data = netbox-client.WritableSecret() # WritableSecret | 
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
+data = netbox_client.WritableSecret() # WritableSecret | 
 
 try:
     api_response = api_instance.secrets_secrets_create(data)
@@ -558,18 +558,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret.
 
 try:
@@ -610,18 +610,18 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 created = 'created_example' # str |  (optional)
@@ -731,20 +731,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret.
-data = netbox-client.WritableSecret() # WritableSecret | 
+data = netbox_client.WritableSecret() # WritableSecret | 
 
 try:
     api_response = api_instance.secrets_secrets_partial_update(id, data)
@@ -786,18 +786,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret.
 
 try:
@@ -839,20 +839,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.SecretsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.SecretsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this secret.
-data = netbox-client.WritableSecret() # WritableSecret | 
+data = netbox_client.WritableSecret() # WritableSecret | 
 
 try:
     api_response = api_instance.secrets_secrets_update(id, data)

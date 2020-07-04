@@ -1,4 +1,4 @@
-# netbox-client.CircuitsApi
+# netbox_client.CircuitsApi
 
 All URIs are relative to *https://netbox.us-east-2.ops.underline.com/api*
 
@@ -42,19 +42,19 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
-data = netbox-client.WritableCircuitTermination() # WritableCircuitTermination | 
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
+data = netbox_client.WritableCircuitTermination() # WritableCircuitTermination | 
 
 try:
     api_response = api_instance.circuits_circuit_terminations_create(data)
@@ -95,18 +95,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit termination.
 
 try:
@@ -147,18 +147,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 term_side = 'term_side_example' # str |  (optional)
 port_speed = 'port_speed_example' # str |  (optional)
 upstream_speed = 'upstream_speed_example' # str |  (optional)
@@ -264,20 +264,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit termination.
-data = netbox-client.WritableCircuitTermination() # WritableCircuitTermination | 
+data = netbox_client.WritableCircuitTermination() # WritableCircuitTermination | 
 
 try:
     api_response = api_instance.circuits_circuit_terminations_partial_update(id, data)
@@ -319,18 +319,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit termination.
 
 try:
@@ -372,20 +372,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit termination.
-data = netbox-client.WritableCircuitTermination() # WritableCircuitTermination | 
+data = netbox_client.WritableCircuitTermination() # WritableCircuitTermination | 
 
 try:
     api_response = api_instance.circuits_circuit_terminations_update(id, data)
@@ -427,19 +427,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
-data = netbox-client.CircuitType() # CircuitType | 
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
+data = netbox_client.CircuitType() # CircuitType | 
 
 try:
     api_response = api_instance.circuits_circuit_types_create(data)
@@ -480,18 +480,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit type.
 
 try:
@@ -532,18 +532,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -641,20 +641,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit type.
-data = netbox-client.CircuitType() # CircuitType | 
+data = netbox_client.CircuitType() # CircuitType | 
 
 try:
     api_response = api_instance.circuits_circuit_types_partial_update(id, data)
@@ -696,18 +696,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit type.
 
 try:
@@ -749,20 +749,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit type.
-data = netbox-client.CircuitType() # CircuitType | 
+data = netbox_client.CircuitType() # CircuitType | 
 
 try:
     api_response = api_instance.circuits_circuit_types_update(id, data)
@@ -804,19 +804,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
-data = netbox-client.WritableCircuit() # WritableCircuit | 
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
+data = netbox_client.WritableCircuit() # WritableCircuit | 
 
 try:
     api_response = api_instance.circuits_circuits_create(data)
@@ -857,18 +857,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit.
 
 try:
@@ -909,18 +909,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 cid = 'cid_example' # str |  (optional)
 install_date = 'install_date_example' # str |  (optional)
@@ -1090,20 +1090,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit.
-data = netbox-client.WritableCircuit() # WritableCircuit | 
+data = netbox_client.WritableCircuit() # WritableCircuit | 
 
 try:
     api_response = api_instance.circuits_circuits_partial_update(id, data)
@@ -1145,18 +1145,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit.
 
 try:
@@ -1198,20 +1198,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this circuit.
-data = netbox-client.WritableCircuit() # WritableCircuit | 
+data = netbox_client.WritableCircuit() # WritableCircuit | 
 
 try:
     api_response = api_instance.circuits_circuits_update(id, data)
@@ -1253,19 +1253,19 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
-data = netbox-client.Provider() # Provider | 
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
+data = netbox_client.Provider() # Provider | 
 
 try:
     api_response = api_instance.circuits_providers_create(data)
@@ -1306,18 +1306,18 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this provider.
 
 try:
@@ -1358,18 +1358,18 @@ A convenience method for rendering graphs for a particular provider.
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this provider.
 
 try:
@@ -1411,18 +1411,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 'id_example' # str |  (optional)
 name = 'name_example' # str |  (optional)
 slug = 'slug_example' # str |  (optional)
@@ -1584,20 +1584,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this provider.
-data = netbox-client.Provider() # Provider | 
+data = netbox_client.Provider() # Provider | 
 
 try:
     api_response = api_instance.circuits_providers_partial_update(id, data)
@@ -1639,18 +1639,18 @@ Call to super to allow for caching
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this provider.
 
 try:
@@ -1692,20 +1692,20 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import netbox-client
-from netbox-client.rest import ApiException
+import netbox_client
+from netbox_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: Bearer
-configuration = netbox-client.Configuration()
+configuration = netbox_client.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = netbox-client.CircuitsApi(netbox-client.ApiClient(configuration))
+api_instance = netbox_client.CircuitsApi(netbox_client.ApiClient(configuration))
 id = 56 # int | A unique integer value identifying this provider.
-data = netbox-client.Provider() # Provider | 
+data = netbox_client.Provider() # Provider | 
 
 try:
     api_response = api_instance.circuits_providers_update(id, data)
