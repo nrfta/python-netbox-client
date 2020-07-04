@@ -23,8 +23,7 @@ jobs:
       - name: set GIT_TOKEN
         env:
           GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: generate code
-        run: |
+      - run: |
           set -e
           wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.14/swagger-codegen-cli-2.4.14.jar \
             -O swagger-codegen-cli.jar
