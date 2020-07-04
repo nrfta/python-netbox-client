@@ -1,5 +1,5 @@
 {
-	"packageName": "netbox_client",
-	"projectName": "netbox_client",
+	"packageName": "netbox-client",
+	"projectName": "netbox-client",
 	"packageVersion": "1.0.0"
 }
