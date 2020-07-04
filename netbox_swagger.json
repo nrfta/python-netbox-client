@@ -30307,7 +30307,6 @@
       "title": "Termination a",
       "required": [
         "site",
-        "connected_endpoint",
         "port_speed"
       ],
       "type": "object",
@@ -30327,7 +30326,8 @@
           "$ref": "#/definitions/NestedSite"
         },
         "connected_endpoint": {
-          "$ref": "#/definitions/NestedInterface"
+          "$ref": "#/definitions/NestedInterface",
+          "x-nullable": true
         },
         "port_speed": {
           "title": "Port speed (Kbps)",
