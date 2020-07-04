@@ -26,8 +26,10 @@ jobs:
             -i $GITHUB_WORKSPACE/codegen/netbox.swagger \
             -o $GITHUB_WORKSPACE/master
           cd $GITHUB_WORKSPACE/master 
+          git init
           git config user.email "67791576+underline-bot@users.noreply.github.com"
           git config user.name "Underline Bot"
+          sed -i 's,git init,,g' git_push.sh
           sed -i 's,GIT_TOKEN,GITHUB_TOKEN,g' git_push.sh
           git config pull.ff only 
           /bin/sh ./git_push.sh nrfta python-netbox-client "Code generated release"
