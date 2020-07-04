@@ -33,7 +33,7 @@ jobs:
           java -jar swagger-codegen-cli.jar generate \
             -l python --git-user-id nrfta --git-repo-id python-netbox-client \
             -c $GITHUB_WORKSPACE/codegen/config.json \
-            -i $GITHUB_WORKSPACE/codegen/netbox.swagger \
+            -i $GITHUB_WORKSPACE/codegen/netbox_swagger.json \
             -o $GITHUB_WORKSPACE/master
 
           cd $GITHUB_WORKSPACE/master 

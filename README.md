@@ -5,7 +5,7 @@ This is the `codegen` branch of the project. It is only used to configure and tr
 ## Instructions
 
 You can control the `config.json` and `.github/workflows` from here. When NetBox updates their API, download the swagger
-and save as `netbox.swagger`.
+and save as `netbox_swagger.json`.
 
 When this branch is pushed to GitHub, the `codegen.yaml` workflow will be triggered.
 
