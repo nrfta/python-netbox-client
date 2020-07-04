@@ -9,7 +9,7 @@
     },
     "version": "2.8"
   },
-  "host": "netbox.us-east-2.ops.underline.com",
+  "host": "netbox",
   "schemes": [
     "https"
   ],
