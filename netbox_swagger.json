@@ -29932,7 +29932,8 @@
         "connected_endpoint_type": {
           "title": "Connected endpoint type",
           "type": "string",
-          "readOnly": true
+          "readOnly": true,
+          "x-nullable": true
         },
         "connected_endpoint": {
           "title": "Connected endpoint",
@@ -29941,7 +29942,8 @@
           "additionalProperties": {
             "type": "string"
           },
-          "readOnly": true
+          "readOnly": true,
+          "x-nullable": true
         },
         "connection_status": {
           "title": "Connection status",
