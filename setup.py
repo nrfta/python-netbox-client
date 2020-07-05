@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "netbox-client"
-VERSION = "1.0.0"
+VERSION = "1.0.3"
 # To install the library, run the following
 #
 # python setup.py install
@@ -28,19 +28,29 @@ REQUIRES = [
     "six>=1.10",
     "urllib3>=1.23"
 ]
-    
+
+# read the contents of README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name=NAME,
     version=VERSION,
-    description="NetBox API",
-    author_email="",
-    url="",
-    keywords=["Swagger", "NetBox API"],
+    description="NetBox API Client",
+    maintainer="strobus",
+    url="https://github.com/nrfta/python-netbox-client",
+    keywords=["Swagger", "NetBox"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
-    long_description="""\
-    API to access NetBox  # noqa: E501
-    """
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    classifiers=[
+        "Programming Language :: Python",
+        "Development Status :: 4 - Beta",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
